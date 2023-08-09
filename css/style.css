@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 /*   Navbar     */
@@ -18,7 +18,7 @@ nav{
 }
 .nav-item a{
     color: black;
-    font-weight: 500;
+    font-weight: 400;
     
 
 }
@@ -247,10 +247,15 @@ nav{
 .effect-banner img{
     position: absolute;
     top:100px;
-    right: 50px;
-    
+    right: 100px;
 }
 
+.effect-banner img:hover{
+    top:50px;
+    transition-property: top;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
 /*  About  */
 
 
@@ -321,10 +326,10 @@ nav{
 }
 
 .solutions .content{
-    width: 350px;
-    margin-bottom: 20px;
+    width: 400px;
+    margin-bottom: 30px;
     background-color: white;
-    
+    border-radius: 5px;
     padding: 25px;    
 }
 
@@ -1112,14 +1117,35 @@ background-color: black;
 .footer-1 .container-2{
     
     width: 100%;
+    
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-
     margin-left: 25px;
+
+    background-image: url('https://tecnologia.vamtam.com/wp-content/uploads/2023/03/footer-dots.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    box-sizing: border-box;
     
 }
+
+.footer-1 .container-2 a{
+    text-align: center;
+}
+
+.footer-1 .container-2 div{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px;
+    background-color: #000;
+    
+}
+
+
+
+
 
 .footer-1 .container-2 button{
     margin-top: 20px;
@@ -1142,6 +1168,7 @@ background-color: black;
     display: flex;
     padding: 30px 0;
     justify-content: space-between;
+    align-items: center;
     
 }
 
@@ -1149,8 +1176,6 @@ background-color: black;
     display: flex;
     align-items: center;
    
-    
-    
 }
 
 .footer-2 .review{
@@ -1190,35 +1215,53 @@ background-color: black;
     line-height: 20px;
     color: rgb(64, 64, 64);
     padding-top: 5px;
+    position: relative;
+    padding-left: 15px;
+   
 }
 
 .footer-2 .foot-contact{
     width: 250px;
     font-size: 15px;
-    padding-right: 70px;
+    padding-right: 50px;
     line-height: 20px;
     color: rgb(64, 64, 64);
-    padding-top: 5px;
+   padding-top: 5px;
+   position: relative;
+   padding-left: 15px;
+   margin-top: 15px;
 
 }
 .footer-2 .foot-contact p{
-    padding-bottom: 2px;
+    padding-bottom: 0px;
+    
     color: rgb(64, 64, 64);
+}
+
+.footer-2 .bar::before{
+    content : "";
+    position: absolute;
+    left    :0 ;
+    z-index: 100;
+    top  : 2;
+    width  : 3px;
+    height   : 30%;  
+    border-radius: 2px;
+    background: #acacac;
 }
 
 
 
 .footer-2 .content-2{
     display: flex;
-    align-items: center;
-    
+    justify-content: space-between;
+   
 }
 
 .footer-2 .content-2 a{
     text-decoration: none;
-    padding-right: 25px;
     color: black;
-    text-align: center;
+        
 }
 
 .footer-2 .container-2{
