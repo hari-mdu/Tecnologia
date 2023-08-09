@@ -253,7 +253,7 @@ nav{
 .effect-banner img:hover{
     top:50px;
     transition-property: top;
-    transition-duration: 3s;
+    transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
 /*  About  */
@@ -1117,18 +1117,16 @@ background-color: black;
 .footer-1 .container-2{
     
     width: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 25px;
-
-    background-image: url('https://tecnologia.vamtam.com/wp-content/uploads/2023/03/footer-dots.svg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 90% auto;
-    box-sizing: border-box;
+    position: relative;
     
+}
+
+.footer-1 .container-2 .bg-img{
+    width: 100%;
 }
 
 .footer-1 .container-2 a{
@@ -1138,12 +1136,19 @@ background-color: black;
 .footer-1 .container-2 div{
     display: flex;
     flex-direction: column;
-    padding: 50px 25px;
+    padding: 50px 35px;
     background-color: #000;
+    position: absolute;
+    top:35%;
+    right: 35%;
     
 }
 
 
+.footer-1 .container-2 .bg-img:hover{
+    transform: scale(0.8);
+    transition: transform 1s ease-in-out;
+}
 
 
 
@@ -1156,6 +1161,7 @@ background-color: black;
     font-size: 14px;
     font-weight: 600;
     border-radius: 5px;
+    
 }
 
 /* footer-2 */
